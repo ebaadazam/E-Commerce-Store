@@ -7,7 +7,7 @@ const HomeSectionCard = ({product}) => {
     overflow-hidden w-[15rem] mx-3 border'>
 
         <div className='h-[13rem] w=[10rem] '>
-            <img className='object-cover object-top w-full h-full' src="product.imageUrl" alt="" />
+            <img className='object-cover object-top w-full h-full' src={product.imageUrl} alt="" />
         </div>
  
         <div className='p-4'>
