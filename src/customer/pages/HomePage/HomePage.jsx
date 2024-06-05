@@ -9,12 +9,12 @@ const HomePage = () => {
         <MainCarousel/>
 
         <div className='space-y-10 py-20 flex flex-col justify-center px-5 lg:px-10'>
-            <HomeSectionCarousel data={mens_kurta}/>
-            <HomeSectionCarousel data={mens_kurta}/>
-            <HomeSectionCarousel data={mens_kurta}/>
-            <HomeSectionCarousel data={mens_kurta}/>
-            <HomeSectionCarousel data={mens_kurta}/>
-            <HomeSectionCarousel data={mens_kurta}/>
+            <HomeSectionCarousel data={mens_kurta} sectionName={"Men Shirt"}/>
+            <HomeSectionCarousel data={mens_kurta} sectionName={"Men Jeans"}/>
+            <HomeSectionCarousel data={mens_kurta} sectionName={"Men Shoes"}/>
+            <HomeSectionCarousel data={mens_kurta} sectionName={"Men Accessories"}/>
+            <HomeSectionCarousel data={mens_kurta} sectionName={"Women Saari"}/>
+            <HomeSectionCarousel data={mens_kurta} sectionName={"Women Dress"}/>
         </div>
     </div>
   )

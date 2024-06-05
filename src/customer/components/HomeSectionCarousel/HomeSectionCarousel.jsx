@@ -4,7 +4,7 @@ import HomeSectionCard from '../HomeSectionCard/HomeSectionCard'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import { Button } from '@mui/material';
 
-const HomeSectionCarousel = ({data}) => {
+const HomeSectionCarousel = ({data, sectionName}) => {
     const [activeIndex, setActiveIndex]=useState(0);
 
     const responsive = {
@@ -22,6 +22,7 @@ const HomeSectionCarousel = ({data}) => {
   return (
     <div className='border'>
         <div className='relative px-5 border'>
+            <h1 className="text-2xl font-extrabold text-gray-800 py-5">{sectionName}</h1>
             <AliceCarousel
                 items = {items}
                 disableButtonsControls
