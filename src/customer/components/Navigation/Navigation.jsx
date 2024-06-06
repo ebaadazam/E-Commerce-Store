@@ -87,7 +87,7 @@ export default function Navigation() {
                 <Tab.Group as="div" className="mt-2">
                   <div className="border-b border-gray-200">
                     <Tab.List className="-mb-px flex space-x-8 px-4">
-                      {navigationn.categories.map((category) => (
+                      {navigation.categories.map((category) => (
                         <Tab
                           key={category.name}
                           className={({ selected }) =>
@@ -410,9 +410,7 @@ export default function Navigation() {
                         }}
                       >
                         <MenuItem>
-                          {auth.user?.role === "ROLE_ADMIN"
-                            ? "Admin Dashboard"
-                            : "My Orders"}
+                         
                         </MenuItem>
                         <MenuItem>Logout</MenuItem>
                       </Menu>
@@ -430,14 +428,14 @@ export default function Navigation() {
                 {/* Search */}
                 <div className="flex items-center lg:ml-6">
                 
-                  <p onClick={()=>navigate("/products/search")} className="p-2 text-gray-400 hover:text-gray-500">
+                  {/* <p onClick={()=>navigate("/products/search")} className="p-2 text-gray-400 hover:text-gray-500"> */}
                     <span className="sr-only">Search</span>
                     
                     <MagnifyingGlassIcon
                       className="h-6 w-6"
                       aria-hidden="true"
                     />
-                  </p>
+                  {/* </p> */}
                 </div>
 
                 {/* Cart */}
