@@ -229,9 +229,11 @@ export default function Product() {
 
                         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
                             <div>
-                                <div className='py-10 flex justify-between items-center'>
-                                    <h1 className='text-lg opacity-100 font-bold'>Filters</h1>
+                                <div className='py-3 flex justify-between items-center'>
+                                    <h1 className='text-md opacity-80 font-bold'>Filters</h1>
+                                    <div className='opacity-70'>
                                     <FilterAltTwoToneIcon />
+                                    </div>
                                 </div>
 
                                 <form className="hidden lg:block">
