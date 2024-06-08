@@ -11,6 +11,7 @@ import { mens_kurta } from '../../../Data/mens_kurta'
 import ProductCard from './ProductCard'
 import { filters, singleFilter } from './FilterData'
 import FilterAltTwoToneIcon from '@mui/icons-material/FilterAltTwoTone';
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const sortOptions = [
     { name: 'Price: Low to High', href: '#', current: false },
@@ -23,6 +24,46 @@ function classNames(...classes) {
 
 export default function Product() {
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
+    const location=useLocation();
+    const navigate=useNavigate();
+    const searchParams = new URLSearchParams(location.search);
+
+
+
+
+    const handleFilter = (value, sectionId) => {
+        let filterValue = searchParams.get(sectionId);
+
+        if (filterValue) {
+            filterValue = filterValue.split(',');
+            if (filterValue.includes(value)) {
+                filterValue = filterValue.filter((item) => item !== value);
+                if (filterValue.length === 0) {
+                    searchParams.delete(sectionId);
+                } else {
+                    searchParams.set(sectionId, filterValue.join(','));
+                }
+            } else {
+                filterValue.push(value);
+                searchParams.set(sectionId, filterValue.join(','));
+            }
+        } else {
+            searchParams.set(sectionId, value);
+        }
+
+        navigate({ search: searchParams.toString() });
+    };
+
+    const handleRadioFilterChange = (e, sectionId) => {
+        const searchParams = new URLSearchParams(location.search);
+        searchParams.set(sectionId, e.target.value);
+        navigate({ search: searchParams.toString() });
+
+
+    }
+
+
+
 
     return (
         <div className="bg-white">
@@ -87,6 +128,7 @@ export default function Product() {
                                                                 {section.options.map((option, optionIdx) => (
                                                                     <div key={option.value} className="flex items-center">
                                                                         <input
+                                                                            onChange={()=>handleFilter(option.value, section.id)}
                                                                             id={`filter-mobile-${section.id}-${optionIdx}`}
                                                                             name={`${section.id}`}
                                                                             type="radio"
