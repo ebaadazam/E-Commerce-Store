@@ -9,7 +9,7 @@ import {
 
 
 import { Avatar, Button, Menu, MenuItem } from "@mui/material";
-import { deepPurple } from "@mui/material/colors";
+import { deepPurple, grey } from "@mui/material/colors";
 import { navigation } from "./navigationData";
 
 
@@ -233,9 +233,9 @@ export default function Navigation() {
                 
                   <span className="sr-only">Your Company</span>
                   <img
-                    src="https://res.cloudinary.com/ddkso1wxi/image/upload/v1675919455/Logo/Copy_of_Zosh_Academy_nblljp.png"
+                    src="https://t3.ftcdn.net/jpg/03/94/81/06/360_F_394810686_kmidDZiq1P2fjBEBHkXLS4JxTk51HfHs.jpg"
                     alt="Shopwithzosh"
-                    className="h-8 w-8 mr-2"
+                    className="h-9 w-9 mr-2"
                   />
               
               </div>
@@ -384,7 +384,7 @@ export default function Navigation() {
                         aria-expanded={open ? "true" : undefined}
                         // onClick={handleUserClick}
                         sx={{
-                          bgcolor: deepPurple[500],
+                          bgcolor: grey[500],
                           color: "white",
                           cursor: "pointer",
                         }}
