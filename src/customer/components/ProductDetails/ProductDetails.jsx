@@ -268,13 +268,13 @@ export default function ProductDetails() {
 
         {/* Ratings and Reviews */}
         <section>
-          <h1 className='font-semibold text-lg pb-4'>Recent Reviews & Ratings</h1>
+          <h1 className='font-semibold text-lg pb-4 px-12'>Recent Reviews & Ratings</h1>
           <div className='border p-5'>
 
             <Grid container spacing={7}>
 
               <Grid item xs={7}>
-                <div className='space-y-5'>
+                <div className='space-y-5 px-10'>
                   { [1,1,1].map((item)=> <ProductReviewCard/> ) }
                 </div>
               </Grid>
@@ -351,8 +351,8 @@ export default function ProductDetails() {
 
         {/* Similar Products */}
         <section className='pt-10'>
-          <h1>Similar Products</h1>
-          <div className='flex flex-wrap'>
+          <h1 className='px-8 py-8 text-xl font-bold'>Similar Products</h1>
+          <div className='flex flex-wrap space-y-5'>
 
             {mens_kurta.map((item)=><HomeSectionCard product={item}/>)}
 
