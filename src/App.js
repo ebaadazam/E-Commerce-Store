@@ -1,26 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Navigation from './customer/components/Navigation/Navigation';
-import HomePage from './customer/pages/HomePage/HomePage';
-import Footer from './customer/components/Footer/Footer';
-import Product from './customer/components/Product/Product';
-import ProductDetails from './customer/components/ProductDetails/ProductDetails'
-import Cart from './customer/components/Cart/Cart';
-import Checkout from './customer/components/Checkout/Checkout';
+import { Route, Routes } from 'react-router-dom';
+import CustomerRouters from './Routers/CustomerRouters';
 
 function App() {
   return (
     <div className="">
-      <Navigation/>
-      
-        <div>
-        {/* <HomePage/> */}
-        {/* <Product/> */}
-        {/* <ProductDetails/> */}
-        {/* <Cart/> */}
-        <Checkout/>
-        </div>
-      <Footer/>
+
+      <Routes>
+        {/* Customer Route */}
+        <Route path='/*' element={<CustomerRouters/>}></Route>
+        {/* Admin Route */}
+        {/* nothing to show now for admin as we have not implemented the dashboard */}
+      </Routes>
+  
 
     </div>
   );
