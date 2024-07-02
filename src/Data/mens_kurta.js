@@ -1,7 +1,3 @@
-export mens_kurta onst={
-    jdbchebcjsadbewfgbgfdvdsvfdsfcdvgscgdfvsgfvsdvfgbbvf
-}
-
 export const mens_kurta=[
     {
         "imageUrl": "https://assets.ajio.com/medias/sys_master/root/20231205/G3z0/656ed440ddf7791519b1e6e2/-473Wx593H-461119105-blue-MODEL.jpg",
