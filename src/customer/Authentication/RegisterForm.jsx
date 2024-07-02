@@ -11,7 +11,7 @@ const RegisterForm = () => {
     const jwt = localStorage.getItem("jwt")
 
     // Access the jwt token from the store
-    const {auth} = useSelector(store=>store)
+    const {auth} = useSelector(store=>store.auth)
 
     // Commented it due to the sudden disapperance of register form
     // Get user profile after token is stored locally

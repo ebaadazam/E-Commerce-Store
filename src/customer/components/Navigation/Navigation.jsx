@@ -404,7 +404,7 @@ const handleLogout = () => {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  {auth.user?.firstName ? (
+                  {auth.user?.firstName? (
                     <div>
                       <Avatar
                         className="text-white"
