@@ -1,5 +1,5 @@
 export mens_kurta onst={
-    jdbchebcjsadbewfgbgfdvdsvf
+    jdbchebcjsadbewfgbgfdvdsvfdsfcdvgscg
 }
 
 export const mens_kurta=[
