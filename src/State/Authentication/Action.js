@@ -1,3 +1,4 @@
+// Action.js
 import axios from "axios"
 import { API_BASE_URL } from "../../config/apiConfig";
 import { GET_USER_FAILURE, GET_USER_REQUEST, GET_USER_SUCCESS, LOGIN_FAILURE, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT, REGISTER_FAILURE, REGISTER_REQUEST, REGISTER_SUCCESS } from "./ActionType";

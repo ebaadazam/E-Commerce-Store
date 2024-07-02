@@ -1,8 +1,7 @@
-import { Password } from '@mui/icons-material';
 import { Button, Grid, TextField, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { getUser, register } from '../../State/Authentication/Action';
 
 const RegisterForm = () => {
@@ -14,24 +13,25 @@ const RegisterForm = () => {
     // Access the jwt token from the store
     const {auth} = useSelector(store=>store)
 
+    // Commented it due to the sudden disapperance of register form
     // Get user profile after token is stored locally
-    useEffect(()=> {
-        if(jwt){
-            dispatch(getUser(jwt))
-        }
+    // useEffect(()=> {
+    //     if(jwt){
+    //         dispatch(getUser(jwt))
+    //     }
         
-    }, [jwt, auth.jwt] )
+    // }, [jwt, auth.jwt] )
 
 
     const handleSubmit = (event) => {
-       event.preventDefault()
+       event.preventDefault();
        const data = new FormData(event.currentTarget);
         const userData = {
             firstName: data.get("firstName"),
             lastName: data.get("lastName"),
             email: data.get("email"),
             password: data.get("password")
-        }
+        };
 
         dispatch(register(userData))
         console.log("userData", userData);
