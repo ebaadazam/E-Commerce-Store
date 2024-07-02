@@ -11,9 +11,9 @@ import {
 import { Avatar, Button, Menu, MenuItem } from "@mui/material";
 import { deepPurple, grey } from "@mui/material/colors";
 import { navigation } from "./navigationData";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import AuthModal from "../../Authentication/AuthModal";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getUser, logout } from "../../../State/Authentication/Action";
 
 
