@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useEffect, useState } from 'react'
 import {
     Dialog,
     Disclosure,
@@ -11,7 +11,10 @@ import { mens_kurta } from '../../../Data/mens_kurta'
 import ProductCard from './ProductCard'
 import { filters, singleFilter } from './FilterData'
 import FilterAltTwoToneIcon from '@mui/icons-material/FilterAltTwoTone';
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { findProducts } from '../../../State/Product/Action'
+import Pagination from '@mui/material/Pagination';
 
 const sortOptions = [
     { name: 'Price: Low to High', href: '#', current: false },
@@ -24,14 +27,24 @@ function classNames(...classes) {
 
 export default function Product() {
     const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
-    const location=useLocation();
-    const navigate=useNavigate();
-    const searchParams = new URLSearchParams(location.search);
+    const location = useLocation();
+    const navigate = useNavigate();
+    const param = useParams();
+    const dispatch = useDispatch();
+    const { products } = useSelector(store => store)
 
-
-
+    const decodedQueryString = decodeURIComponent(location.search);
+    const searchParams = new URLSearchParams(decodedQueryString);
+    const colorValue = searchParams.get("color");
+    const sizeValue = searchParams.get("size");
+    const priceValue = searchParams.get("price");
+    const discount = searchParams.get("discount");
+    const sortValue = searchParams.get("sort");
+    const pageNumber = searchParams.get("page");
+    const stock = searchParams.get("stock");
 
     const handleFilter = (value, sectionId) => {
+        const searchParams = new URLSearchParams(location.search);
         let filterValue = searchParams.get(sectionId);
 
         if (filterValue) {
@@ -57,13 +70,43 @@ export default function Product() {
     const handleRadioFilterChange = (e, sectionId) => {
         const searchParams = new URLSearchParams(location.search);
         searchParams.set(sectionId, e.target.value);
-        navigate({ search: searchParams.toString() });
+        const query = searchParams.toString();
+        navigate({ search: `?${query}` });
+    };
 
-
+    const handlePaginationChange = (event, value) => {
+        const searchParams = new URLSearchParams(location.search);
+        searchParams.set("page", value);
+        const query = searchParams.toString();
+        navigate({ search: `?${query}` })
     }
 
+    useEffect(() => {
 
+        const [minPrice, maxPrice] = priceValue === null ? [0, 10000] : priceValue.split("-").map(Number);
+        const data = {
+            category: param.levelThree,
+            colors: colorValue || [],
+            sizes: sizeValue || [],
+            minPrice,
+            maxPrice,
+            minDiscount: discount || 0,
+            sort: sortValue || "price_low",
+            pageNumber: pageNumber - 1,
+            pageSize: 1, //no of products you wanna show on one page
+            stock: stock
+        }
+        dispatch(findProducts(data))
 
+    }, [param.levelThree,
+        colorValue,
+        sizeValue,
+        priceValue,
+        discount,
+        sortValue,
+        pageNumber,
+        stock
+    ])
 
     return (
         <div className="bg-white">
@@ -127,14 +170,19 @@ export default function Product() {
                                                             <div className="space-y-6">
                                                                 {section.options.map((option, optionIdx) => (
                                                                     <div key={option.value} className="flex items-center">
+
+
                                                                         <input
-                                                                            onChange={()=>handleFilter(option.value, section.id)}
+                                                                            onChange={(e) => handleFilter(option.value, section.id)}
                                                                             id={`filter-mobile-${section.id}-${optionIdx}`}
                                                                             name={`${section.id}`}
-                                                                            type="radio"
+                                                                            type="checkbox"
                                                                             value={option.value}
                                                                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                                                         />
+
+
+
                                                                         <label
                                                                             htmlFor={`filter-mobile-${section.id}-${optionIdx}`}
                                                                             className="ml-3 min-w-0 flex-1 text-gray-500"
@@ -170,13 +218,20 @@ export default function Product() {
                                                             <div className="space-y-6">
                                                                 {section.options.map((option, optionIdx) => (
                                                                     <div key={option.value} className="flex items-center">
+
+
                                                                         <input
                                                                             id={`filter-mobile-${section.id}-${optionIdx}`}
                                                                             name={`${section.id}`}
                                                                             type="radio"
                                                                             value={option.value}
+                                                                            checked={sortValue === option.value}
+                                                                            onChange={(e) => handleRadioFilterChange(e, section.id)}
                                                                             className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                                                         />
+
+
+
                                                                         <label
                                                                             htmlFor={`filter-mobile-${section.id}-${optionIdx}`}
                                                                             className="ml-3 min-w-0 flex-1 text-gray-500"
@@ -205,24 +260,21 @@ export default function Product() {
                         <div className="flex items-center">
                             <Menu as="div" className="relative inline-block text-left">
                                 <div>
-                                    <Menu.Button className="group inline-flex justify-center text-sm font-medium text-gray-700 hover:text-gray-900">
+                                    <Menu.Button className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                                         Sort
-                                        <ChevronDownIcon
-                                            className="-mr-1 ml-1 h-5 w-5 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
-                                            aria-hidden="true"
-                                        />
+                                        <ChevronDownIcon className="-mr-1 ml-2 h-5 w-5" aria-hidden="true" />
                                     </Menu.Button>
                                 </div>
-
                                 <Transition
-                                    enter="transition ease-out duration-100"
-                                    enterFrom="transform opacity-0 scale-95"
-                                    enterTo="transform opacity-100 scale-100"
-                                    leave="transition ease-in duration-75"
-                                    leaveFrom="transform opacity-100 scale-100"
-                                    leaveTo="transform opacity-0 scale-95"
+                                    as={Fragment}
+                                    enter="transition ease-out duration-200"
+                                    enterFrom="opacity-0 translate-y-1"
+                                    enterTo="opacity-100 translate-y-0"
+                                    leave="transition ease-in duration-150"
+                                    leaveFrom="opacity-100 translate-y-0"
+                                    leaveTo="opacity-0 translate-y-1"
                                 >
-                                    <Menu.Items className="absolute right-0 z-10 mt-2 w-40 origin-top-right rounded-md bg-white shadow-2xl ring-1 ring-black ring-opacity-5 focus:outline-none">
+                                    <Menu.Items className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                                         <div className="py-1">
                                             {sortOptions.map((option) => (
                                                 <Menu.Item key={option.name}>
@@ -230,10 +282,10 @@ export default function Product() {
                                                         <a
                                                             href={option.href}
                                                             className={classNames(
-                                                                option.current ? 'font-medium text-gray-900' : 'text-gray-500',
-                                                                active ? 'bg-gray-100' : '',
+                                                                active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                                                                 'block px-4 py-2 text-sm'
                                                             )}
+                                                            onClick={(e) => handleRadioFilterChange(e, 'sort')}
                                                         >
                                                             {option.name}
                                                         </a>
@@ -245,40 +297,50 @@ export default function Product() {
                                 </Transition>
                             </Menu>
 
-                            <button type="button" className="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7">
-                                <span className="sr-only">View grid</span>
-                                <Squares2X2Icon className="h-5 w-5" aria-hidden="true" />
-                            </button>
+
+
 
 
                             <button
                                 type="button"
-                                className="-m-2 ml-4 p-2 text-gray-400 hover:text-gray-500"
+                                className="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7"
+                            >
+                                <span className="sr-only">View grid</span>
+                                <Squares2X2Icon className="h-5 w-5" aria-hidden="true" />
+                            </button>
+                            <button
+                                type="button"
+                                className="-m-2 ml-5 p-2 text-gray-400 hover:text-gray-500 sm:ml-7"
                                 onClick={() => setMobileFiltersOpen(true)}
                             >
                                 <span className="sr-only">Filters</span>
-                                <FunnelIcon className="h-5 w-5" aria-hidden="true" />
+                                {/* <FilterAltTwoToneIcon className="h-5 w-5" aria-hidden="true" /> */}
                             </button>
+
 
 
                         </div>
                     </div>
 
+                    {/* Filters and Product Grid */}
                     <section aria-labelledby="products-heading" className="pb-24 pt-6">
+
+
+
                         <h2 id="products-heading" className="sr-only">
                             Products
                         </h2>
 
-                        <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
-                            <div>
-                                <div className='py-3 flex justify-between items-center'>
-                                    <h1 className='text-md opacity-80 font-bold'>Filters</h1>
-                                    <div className='opacity-70'>
-                                    <FilterAltTwoToneIcon />
-                                    </div>
-                                </div>
+                        <div className="flex items-center mb-2">
+  <h1 className="text-lg font-semibold opacity-70">Filters</h1>
+  <FilterAltTwoToneIcon className="h-5 w-5 ml-36 mr-3" aria-hidden="true" />
+</div>
 
+                        <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
+                            {/* Filters */}
+                            <div>
                                 <form className="hidden lg:block">
+                                    {/* Filters */}
                                     {filters.map((section) => (
                                         <Disclosure as="div" key={section.id} className="border-b border-gray-200 py-6">
                                             {({ open }) => (
@@ -302,8 +364,9 @@ export default function Product() {
                                                                     <input
                                                                         id={`filter-${section.id}-${optionIdx}`}
                                                                         name={`${section.id}`}
-                                                                        type="radio"
-                                                                        value={option.value}
+                                                                        type="checkbox"
+                                                                        checked={colorValue && colorValue.split(',').includes(option.value)}
+                                                                        onChange={() => handleFilter(option.value, section.id)}
                                                                         className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                                                     />
                                                                     <label
@@ -320,6 +383,10 @@ export default function Product() {
                                             )}
                                         </Disclosure>
                                     ))}
+
+
+
+
 
                                     {singleFilter.map((section) => (
                                         <Disclosure as="div" key={section.id} className="border-b border-gray-200 py-6">
@@ -342,9 +409,10 @@ export default function Product() {
                                                             {section.options.map((option, optionIdx) => (
                                                                 <div key={option.value} className="flex items-center">
                                                                     <input
+                                                                        onChange={(e) => handleRadioFilterChange(e, section.id)}
                                                                         id={`filter-${section.id}-${optionIdx}`}
                                                                         name={`${section.id}`}
-                                                                        type="radio"
+                                                                        type="checkbox"
                                                                         value={option.value}
                                                                         className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
                                                                     />
@@ -364,16 +432,35 @@ export default function Product() {
                                     ))}
                                 </form>
 
+
+
+
+
+
+
+
+
+
+
+                                {/* </form> */}
                             </div>
 
-
-                            {/* Product grid */}
+                            {/* Product Grid */}
                             <div className="lg:col-span-4 w-full">
                                 <div className="grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
-                                    {mens_kurta.map((item) => <ProductCard key={item.id} product={item} />)}
+                                    {/* Product cards */}
+                                    {products.products && products.products?.content?.map((item) => (
+                                        <ProductCard key={item.id} product={item} />
+                                    ))}
                                 </div>
-
                             </div>
+                        </div>
+                    </section>
+
+                    {/* Pagination */}
+                    <section className="w-full px-[3.6rem]">
+                        <div className="px-4 py-5 flex justify-center">
+                            <Pagination count={products.products?.totalPages} color="secondary" onChange={handlePaginationChange} />
                         </div>
                     </section>
                 </main>
@@ -381,3 +468,4 @@ export default function Product() {
         </div>
     )
 }
+

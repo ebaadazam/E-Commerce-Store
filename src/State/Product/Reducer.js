@@ -4,7 +4,7 @@ const initialState = {
     products:[],
     product:null,
     loading:false,
-    error:null
+    error:null,
 }
 
 // exporting this from here and register it in the store.js
