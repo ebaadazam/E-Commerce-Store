@@ -34,7 +34,7 @@ const RegisterForm = () => {
         };
 
         dispatch(register(userData))
-        console.log("userData", userData);
+        console.log("userData(register)", userData);
 
     }
 

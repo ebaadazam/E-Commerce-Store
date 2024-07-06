@@ -15,6 +15,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import AuthModal from "../../Authentication/AuthModal";
 import { useDispatch, useSelector } from "react-redux";
 import { getUser, logout } from "../../../State/Authentication/Action";
+import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 
 
 function classNames(...classes) {
@@ -28,7 +29,7 @@ export default function Navigation() {
   const [anchorEl, setAnchorEl] = useState(null);
   const openUserMenu = Boolean(anchorEl);
   const jwt = localStorage.getItem("jwt");
-  const {auth} = useSelector(store=>store)
+  const { auth } = useSelector(store => store)
   const dispatch = useDispatch();
   const location = useLocation();
 
@@ -52,26 +53,26 @@ export default function Navigation() {
     close();
   };
 
-  useEffect(()=> {
-    if(jwt){
-        dispatch(getUser(jwt))
+  useEffect(() => {
+    if (jwt) {
+      dispatch(getUser(jwt))
     }
-}, [jwt, auth.jwt] )
+  }, [jwt, auth.jwt])
 
-  useEffect(()=> {
+  useEffect(() => {
     // Everytime when auth user changes we check
-    if(auth.user){
+    if (auth.user) {
       handleClose()
     }
-    if(location.pathname === "/login" || location.pathname === "/register"){
+    if (location.pathname === "/login" || location.pathname === "/register") {
       navigate(-1)
     }
-}, [auth.user] )
+  }, [auth.user])
 
-const handleLogout = () => {
-  dispatch(logout())
-  handleCloseUserMenu()
-}
+  const handleLogout = () => {
+    dispatch(logout())
+    handleCloseUserMenu()
+  }
 
 
   return (
@@ -260,14 +261,14 @@ const handleLogout = () => {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                
-                  <span className="sr-only">Your Company</span>
-                  <img
-                    src="https://t3.ftcdn.net/jpg/03/94/81/06/360_F_394810686_kmidDZiq1P2fjBEBHkXLS4JxTk51HfHs.jpg"
-                    alt="Shopwithzosh"
-                    className="h-9 w-9 mr-2"
-                  />
-              
+
+                <span className="sr-only">Your Company</span>
+                <img
+                  src="https://t3.ftcdn.net/jpg/03/94/81/06/360_F_394810686_kmidDZiq1P2fjBEBHkXLS4JxTk51HfHs.jpg"
+                  alt="Shopwithzosh"
+                  className="h-9 w-9 mr-2"
+                />
+
               </div>
 
               {/* Flyout menus */}
@@ -404,7 +405,7 @@ const handleLogout = () => {
 
               <div className="ml-auto flex items-center">
                 <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  {auth.user?.firstName? (
+                  {auth.user?.firstName ? (
                     <div>
                       <Avatar
                         className="text-white"
@@ -440,55 +441,69 @@ const handleLogout = () => {
                         }}
                       >
                         <MenuItem onClick={handleCloseUserMenu}> Profile </MenuItem>
-                        <MenuItem onClick={()=>navigate("/account/order")}> My Orders </MenuItem>
+                        <MenuItem onClick={() => navigate("/account/order")}> My Orders </MenuItem>
                         <MenuItem onClick={handleLogout}> Logout </MenuItem>
                       </Menu>
                     </div>
                   ) : (
+
+
+
+
+
                     <Button
                       onClick={handleOpen}
                       className="text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
-                      Signin
+                      {/* Signin */}
+                      <PermIdentityIcon />
                     </Button>
                   )}
                 </div>
 
-                {/* Search */}
+
+                {/* Search Button Icon */}
                 <div className="flex items-center lg:ml-6">
-                
-                  {/* <p onClick={()=>navigate("/products/search")} className="p-2 text-gray-400 hover:text-gray-500"> */}
-                    <span className="sr-only">Search</span>
-                    
+                  <span className="sr-only">Search</span>
+                  <Button
+                    onClick={() => navigate("/products/search")}
+                    className="text-sm font-medium text-gray-800 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+                  >
                     <MagnifyingGlassIcon
-                      className="h-6 w-6"
+                      className="h-5 w-5"
                       aria-hidden="true"
                     />
-                  {/* </p> */}
+                  </Button>
                 </div>
 
-                {/* Cart */}
+
+
+                {/* Cart Buttom Icon*/}
                 <div className="ml-4 flow-root lg:ml-6">
-                  <Button
-                    className="group -m-2 flex items-center p-2"
-                  >
-                    <ShoppingBagIcon
-                      className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
-                      aria-hidden="true"
-                    />
-                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      2
-                    </span>
+                  <Button className="group flex items-center text-sm font-medium text-gray-800 hover:text-gray-900">
+                    <div className="relative">
+                      <ShoppingBagIcon className="h-6 w-5 flex-shrink-0" aria-hidden="true" />
+                      <span className="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-semibold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
+                        2
+                      </span>
+                    </div>
+                    {/* <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
+            Cart
+        </span> */}
                     <span className="sr-only">items in cart, view bag</span>
                   </Button>
                 </div>
+
+
+                
+
               </div>
             </div>
           </div>
         </nav>
       </header>
 
-      <AuthModal handleClose={handleClose} open={openAuthModal}/>
+      <AuthModal handleClose={handleClose} open={openAuthModal} />
 
     </div>
   );
