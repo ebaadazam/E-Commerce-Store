@@ -4,7 +4,7 @@ import Button from '@mui/material/Button';
 
 import { Box, Grid, LinearProgress, Rating } from '@mui/material'
 import ProductReviewCard from './ProductReviewCard';
-import { mens_kurta } from '../../../Data/mens_kurta';
+import { mens_kurta } from '../../../Data/Men/mens_kurta';
 import HomeSectionCard from '../HomeSectionCard/HomeSectionCard';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';

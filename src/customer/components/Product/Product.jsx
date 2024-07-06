@@ -7,7 +7,7 @@ import {
 } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
-import { mens_kurta } from '../../../Data/mens_kurta'
+import { mens_kurta } from '../../../Data/Men/mens_kurta'
 import ProductCard from './ProductCard'
 import { filters, singleFilter } from './FilterData'
 import FilterAltTwoToneIcon from '@mui/icons-material/FilterAltTwoTone';
@@ -93,7 +93,7 @@ export default function Product() {
             minDiscount: discount || 0,
             sort: sortValue || "price_low",
             pageNumber: pageNumber - 1,
-            pageSize: 1, //no of products you wanna show on one page
+            pageSize: 4, //no of products you wanna show on one page
             stock: stock
         }
         dispatch(findProducts(data))

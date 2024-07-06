@@ -1,96 +1,12 @@
-export const mens_kurta=[
+export const women_dress=[
     {
-        "imageUrl": "https://assets.ajio.com/medias/sys_master/root/20231205/G3z0/656ed440ddf7791519b1e6e2/-473Wx593H-461119105-blue-MODEL.jpg",
-        "brand": "Majestic Man",
-        "title": "Men Printed Pure Cotton Straight Kurta",
-        "color": "Green",
-        "discountedPrice": 499,
-        "price": 1499,
-        "discountPercent": 66,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/l/f/r/xl-k-spl668-yellow-sg-leman-original-imagznqcrahgq9rf.jpeg?q=70",
-        "brand": "SG LEMAN",
-        "title": "Men Embroidered Jacquard Straight Kurta",
-        "color": "Yellow",
-        "discountedPrice": 799,
-        "price": 2499,
-        "discountPercent": 68,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/g/6/k/m-sksh-dt1105-pcbl-fubar-original-imafux247zhqym2z-bb.jpeg?q=70",
-        "brand": "FUBAR",
-        "title": "Men Printed Cotton Blend Straight Kurta",
-        "color": "Blue",
-        "discountedPrice": 399,
-        "price": 1499,
-        "discountPercent": 73,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/i/v/x/xxl-br-ad-kt-105-adwyn-peter-original-imagj4zyd2q7t6cg.jpeg?q=70",
-        "brand": "ALY JOHN",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "White",
-        "discountedPrice": 474,
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/a/x/z/l-na-awd-19-yellow-aarvia-original-imagzffm3bkyzup2.jpeg?q=70",
+        "brand": "Aarvia",
+        "title": "Women Bodycon Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 699,
         "price": 1999,
-        "discountPercent": 76,
+        "discountPersent": 65,
         "size": [
             {
               "name": "S",
@@ -106,607 +22,19 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/j/a/r/l-poch521835-peter-england-original-imag7jg47g7cxhg3-bb.jpeg?q=70",
-        "brand": "PETER ENGLAND",
-        "title": "Men Woven Design Pure Cotton Straight Kurta",
-        "color": "Grey",
-        "discountedPrice": 524,
-        "price": 1049,
-        "discountPercent": 50,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/y/c/x/xl-kast107hp-majestic-man-original-imafw49u5uty4agx-bb.jpeg?q=70",
-        "brand": "Majestic Man",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "Pink",
-        "discountedPrice": 499,
-        "price": 1499,
-        "discountPercent": 66,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-         "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kpodocw0/t-shirt/x/o/4/xl-wr-64-wrodss-original-imag3upwgq9n9fbv.jpeg?q=70",
-        "brand": "WRODSS",
-        "title": "Men Solid Cotton Blend Straight Kurta",
-        "color": "Black",
-        "discountedPrice": 277,
-        "price": 999,
-        "discountPercent": 72,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/l4zxn680/kurta/i/g/u/s-mtml0039-341-manthan-original-imagfrz3gwgdtczm.jpeg?q=70",
-        "brand": "Manthan",
-        "title": "Men Printed Cotton Blend Straight Kurta",
-        "color": "Blue",
-        "discountedPrice": 765,
-        "price": 1049,
-        "discountPercent": 27,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/m/e/e/s-kurta-rahul-look-original-imaga2g6qmhbywdf-bb.jpeg?q=70",
-        "brand": "RAHUL LOOK",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "Green",
-        "discountedPrice": 499,
-        "price": 1599,
-        "discountPercent": 68,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-         "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/u/v/m/l-grey-106-yellow-freluro-original-imagc26vdpwxgztu-bb.jpeg?q=70",
-        "brand": "FRELURO",
-        "title": "Men Printed Cotton Blend Straight Kurta",
-        "color": "Yellow",
-        "discountedPrice": 429,
-        "price": 999,        
-        "discountPercent": 57,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/jsj90280/kurta/j/z/g/l-mtmkos0004-326-manthan-original-imafe35wha5ry36p.jpeg?q=70",
-        "brand": "Manthan",
-        "title": "Men Self Design Cotton Blend Straight Kurta",
-        "color": "Light Blue",
-        "discountedPrice": 729,
-        "price": 909,        
-        "discountPercent": 27,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/g/f/f/xl-grey-sws4503-allan-peter-original-imag6xxgvvh59gh5-bb.jpeg?q=70",
-        "brand": "allan peter",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "Green",
-        "discountedPrice": 449,
-        "price": 1749,
-        "discountPercent": 74,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/u/g/z/xl-8button-kurta-elepants-original-imagk57kfg2bwvhd.jpeg?q=70",
-        "brand": "COMBRAIDED",
-        "title": "Men Solid Cotton Blend Straight Kurta",
-        "color": "Dark Blue",
-        "discountedPrice": 449,
-        "price": 1499,
-        "discountPercent": 70,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/7/b/q/xl-short-button-yellow-101-deal4mens-original-imagf6nzhwufyygg.jpeg?q=70",
-        "brand": "FOLGEN",
-        "title": "Men Solid Cotton Blend Straight Kurta",
-        "color": "Yellow",
-        "discountedPrice": 385,
-        "price": 1299,
-        "discountPercent": 70,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-         "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/l3lx8cw0/kurta/d/o/m/l-kurta-mr-button-tap-in-original-imagezztuysgufsh.jpeg?q=70",
-        "brand": "Tap in",
-        "title": "Men Solid Cotton Blend Straight Kurta",
-        "color": "Orange",
-        "discountedPrice": 395,
-        "price": 1495,
-        "discountPercent": 73,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/a/m/4/xl-sksh-dt1105-navy-fubar-original-imafuyzzh7fx6kaw-bb.jpeg?q=70",
-        "brand": "FUBAR",
-        "title": "Men Printed Cotton Blend Straight Kurta",
-        "color": "Dark Blue",
-        "discountedPrice": 399,
-        "price": 1648,
-        "discountPercent": 75,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-         "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/7/m/3/xxl-vlsd-a0ltpk-vida-loca-original-imagk5ggvxf97dwz.jpeg?q=70",
-        "brand": "Vida Loca",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "White",
-        "discountedPrice": 599,
-        "price": 2499,
-        "discountPercent": 76,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kxkqavk0/kurta/l/w/t/xxl-vlsd-a0lt-vida-loca-original-imagay8hcrqax2uv.jpeg?q=70",
-        "brand": "Vida Loca",
-        "title": "Men Self Design Pure Cotton Straight Kurta",
-        "color": "White",
-        "discountedPrice": 629,
-        "price": 2499,
-        "discountPercent": 74,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/n/p/q/xxl-white-kurta-lilen-spoque-original-imagnk2zzcgqst3r.jpeg?q=70",
-        "brand": "Nofilter",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "White",
-        "discountedPrice": 370,
-        "price": 1499,
-        "discountPercent": 75,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/l/9/r/xxl-ksh-p-kurta-yellow-ksh-trendz-original-imafyq4h7q5gpkzk-bb.jpeg?q=70",
-        "brand": "KSH Trendz",
-        "title": "Men Solid Cotton Blend Straight Kurta",
-        "color": "Yellow",
-        "discountedPrice": 363,
-        "price": 1499,
-        "discountPercent": 75,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kxkqavk0/kurta/c/p/f/xxl-vlsd-a0lt-vida-loca-original-imagay8hjdc9cdzh.jpeg?q=70",
-        "brand": "Vida Loca",
-        "title": "Men Self Design Pure Cotton Straight Kurta",
-        "color": "Beige",
-        "discountedPrice": 629,
-        "price": 2499,
-        "discountPercent": 74,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/5/w/o/l-vlsd-a0lt-vida-loca-original-imagay8hg3nydjuh-bb.jpeg?q=70",
-        "brand": "Vida Loca",
-        "title": "Men Self Design Pure Cotton Straight Kurta",
-        "color": "Light Blue",
-        "discountedPrice": 629,
-        "price": 2499,
-        "discountPercent": 74,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-         "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/v/7/w/xl-sksh-dt1105-pur-fubar-original-imafuy3z57uqgdrp-bb.jpeg?q=70",
-        "brand": "FUBAR",
-        "title": "Men Printed Cotton Blend Straight Kurta",
-        "color": "Purple",
-        "discountedPrice": 399,
-        "price": 1648,
-        "discountPercent": 75,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kfpq5jk0-0/kurta/e/g/i/m-kast109pp-majestic-man-original-imafw49u8vyzygpn.jpeg?q=70",
-        "brand": "Majestic Man",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "Pink",
-        "discountedPrice": 499,
-        "price": 1499,
-        "discountPercent": 66,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-         "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/y/r/m/xxs-sada-plain-kurta-ksh-trendz-original-imag4baggdt7txju-bb.jpeg?q=70",
-        "brand": "KSH Trendz",
-        "title": "Men Solid Cotton Blend Straight Kurta",
-        "color": "Yellow",
-        "discountedPrice": 265,
-        "price": 1499,
-        "discountPercent": 82,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/t/g/w/xxl-ae08sk42-blue-aew-designs-original-imagg8npatfky9wg.jpeg?q=70",
-        "brand": "ARMAAN ETHNIC",
-        "title": "Men Self Design Cotton Blend Straight Kurta",
-        "color": "Blue",
-        "discountedPrice": 483,
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/h/m/h/xl-na-awd-23-yellow-aarvia-original-imagzfs6ykq3z7jw.jpeg?q=70",
+        "brand": "Aarvia",
+        "title": "Women Bodycon Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 699,
         "price": 1999,
-        "discountPercent": 75,
+        "discountPersent": 65,
         "size": [
             {
               "name": "S",
@@ -722,19 +50,75 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/b/0/5/m-kast-fern-lit-green-majestic-man-original-imagzrafzhtbnz7s.jpeg?q=70",
-        "brand": "Majestic Man",
-        "title": "Men Printed Pure Cotton Straight Kurta",
-        "color": "Light Green",
-        "discountedPrice": 499,
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/h/l/3/xxl-6101-sheetal-associates-original-imagmnemtrdhgrnc.jpeg?q=70",
+        "brand": "Sheetal Associates",
+        "title": "Women Fit and Flare Yellow, White, Green Dress",
+        "color": "yellow",
+        "discountedPrice": 459,
+        "price": 1999,
+        "discountPersent": 77,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kt0enww0/dress/2/d/p/xxl-1091-sheetal-associates-original-imag6g4n7qhwesad.jpeg?q=70",
+        "brand": "Sheetal Associates",
+        "title": "Women Fit and Flare Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 459,
+        "price": 1999,
+        "discountPersent": 77,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/f/z/y/l-aa-00153-yellow-aayu-original-imagz848vwz3hsgm.jpeg?q=70",
+        "brand": "AAYU",
+        "title": "Women A-line Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 420,
         "price": 1499,
-        "discountPercent": 66,
+        "discountPersent": 71,
         "size": [
             {
               "name": "S",
@@ -750,19 +134,243 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/e/o/4/m-kast-hukum-orange-majestic-man-original-imagzra2fzadkyrz.jpeg?q=70",
-        "brand": "Majestic Man",
-        "title": "Men Printed Pure Cotton Straight Kurta",
-        "color": "Orange",
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/l51d30w0/dress/h/a/w/xl-j0433-dr-janasya-original-imagfsu9ghjsjhgz.jpeg?q=70",
+        "brand": "Janasya",
+        "title": "Women Fit and Flare Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 902,
+        "price": 2689,
+        "discountPersent": 66,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/3/9/c/m-552-sanwariya-creation-original-imagqsmykwmkg9yr.jpeg?q=70",
+        "brand": "SHRI RADHA RANI CREATIONS",
+        "title": "Women A-line Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 549,
+        "price": 2999,
+        "discountPersent": 81,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/w/p/e/l-na-av-dress-6071-yellow-aarvia-original-imagzbzycshx3thh.jpeg?q=70",
+        "brand": "Aarvia",
+        "title": "Women Bodycon Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 699,
+        "price": 1999,
+        "discountPersent": 65,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kwtkxow0/dress/5/o/q/xl-ttj6006065-tokyo-talkies-original-imag9ewa6fedyzsk.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Women Ribbed Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 329,
+        "price": 1099,
+        "discountPersent": 70,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/g/d/b/xl-rddr-012-rudraaksha-original-imafthtx7pmhabpy-bb.jpeg?q=70",
+        "brand": "Rudraaksha",
+        "title": "Women Maxi Yellow Dress With Mask",
+        "color": "yellow",
+        "discountedPrice": 380,
+        "price": 1999,
+        "discountPersent": 80,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/s/0/l/s-na-awd-17-yellow-aarvia-original-imagzextmwheznnz.jpeg?q=70",
+        "brand": "Aarvia",
+        "title": "Women Bodycon Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 699,
+        "price": 1999,
+        "discountPersent": 65,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/n/m/a/m-na-lt-4013-wdress-mehandi-hirlax-original-imagz5zfkyzhrfkz.jpeg?q=70",
+        "brand": "Aarvia",
+        "title": "Women Bodycon Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 699,
+        "price": 1999,
+        "discountPersent": 65,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kv9urgw0/dress/7/x/t/m-ttj6005885-tokyo-talkies-original-imag87wh5zqaf2tf.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Women Skater Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 374,
+        "price": 1099,
+        "discountPersent": 65,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/z/m/o/xl-puff-sleeve-dress-ne-style-original-imagqx42dqmhsvdq.jpeg?q=70",
+        "brand": "NE STYLE",
+        "title": "Women Pleated Yellow Dress",
+        "color": "yellow",
         "discountedPrice": 499,
-        "price": 1499,
-        "discountPercent": 66,
+        "price": 1999,
+        "discountPersent": 75,
         "size": [
             {
               "name": "S",
@@ -778,19 +386,131 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/s/p/a/l-kcsh-krt-103-mao-fubar-original-imag7fpesvngbwyy-bb.jpeg?q=70",
-        "brand": "FUBAR",
-        "title": "Men Printed Cotton Blend Straight Kurta",
-        "color": "Maroon",
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kx6fwcw0/dress/r/x/y/m-ttj6006050-tokyo-talkies-original-imag9zsgggfjn7yz.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Women Skater Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 494,
+        "price": 1649,
+        "discountPersent": 70,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kzpw2vk0/dress/d/p/n/s-ttj6006310-tokyo-talkies-original-imagbz26jhxynkcd.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Women Maxi Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 672,
+        "price": 2449,
+        "discountPersent": 72,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/j/6/6/l-na-awd-21-yellow-aarvia-original-imagzf28ezdjs5ht.jpeg?q=70",
+        "brand": "Aarvia",
+        "title": "Women Bodycon Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 699,
+        "price": 1999,
+        "discountPersent": 65,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/l/i/8/s-ah-west-01-yellow-anaghan-original-imagkzh9pdgqegms.jpeg?q=70",
+        "brand": "VISHVAA ENTERPRISE",
+        "title": "Women Drop Waist Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 678,
+        "price": 3390,
+        "discountPersent": 80,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/q/3/h/m-a-midi-01-kaver-original-imagmyfjjzveg7as.jpeg?q=70",
+        "brand": "FALTOOO FASHION",
+        "title": "Women Bodycon Yellow Dress",
+        "color": "yellow",
         "discountedPrice": 399,
-        "price": 1648,
-        "discountPercent": 75,
+        "price": 499,
+        "discountPersent": 20,
         "size": [
             {
               "name": "S",
@@ -806,103 +526,19 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/8/u/r/xl-sws2701-allan-peter-original-imafvxcfcsg4dzab-bb.jpeg?q=70",
-        "brand": "allan peter",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "Pink",
-        "discountedPrice": 449,
-        "price": 1749,
-        "discountPercent": 74,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/x/u/y/s-smpl04-deemoon-original-imagk5mnr9ufeha2.jpeg?q=70",
-        "brand": "DEEMOON",
-        "title": "Men Floral Print Cotton Blend Straight Kurta",
-        "color": "Dark Blue",
-        "discountedPrice": 468,
-        "price": 1599,
-        "discountPercent": 70,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/z/l/b/xl-grey-sws2902-allan-peter-original-imag3y6tzaaxwkhy-bb.jpeg?q=70",
-        "brand": "allan peter",
-        "title": "Men Printed Pure Cotton Straight Kurta",
-        "color": "Dark Blue",
-        "discountedPrice": 499,
-        "price": 1749,
-        "discountPercent": 71,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/e/j/j/l-jcardkurta-yellow-divra-clothing-original-imaggjhfgjqhuwtk.jpeg?q=70",
-        "brand": "More & More",
-        "title": "Men Self Design Cotton Blend Straight Kurta",
-        "color": "Yellow",
-        "discountedPrice": 467,
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/gown/w/s/8/na-s-full-sleeve-stitched-gown-maxi-3-dyrectdeals-na-original-imafzub25yz8gg9k-bb.jpeg?q=70",
+        "brand": "dyrectdeals",
+        "title": "Women Maxi White, Black, Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 379,
         "price": 2199,
-        "discountPercent": 78,
+        "discountPersent": 82,
         "size": [
             {
               "name": "S",
@@ -918,19 +554,19 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/o/u/d/s-up-kurta-31035-phone-sg-leman-original-imagzu7tgzgtmnvb.jpeg?q=70",
-        "brand": "SG LEMAN",
-        "title": "Men Printed Pure Silk Straight Kurta",
-        "color": "Gold",
-        "discountedPrice": 810,
-        "price": 2499,
-        "discountPercent": 67,
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/c/y/j/-original-imagq647gjg7ad7a.jpeg?q=70",
+        "brand": "SASSAFRAS",
+        "title": "Women Wrap White, Brown, Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 594,
+        "price": 1699,
+        "discountPersent": 65,
         "size": [
             {
               "name": "S",
@@ -946,19 +582,19 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kybvo280/kurta/v/i/i/xxl-aly2502-aly-john-original-imagah6me94dugrs.jpeg?q=70",
-        "brand": "ALY JOHN",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "Maroon",
-        "discountedPrice": 478,
-        "price": 1279,
-        "discountPercent": 62,
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kzegk280/dress/a/1/2/l-ttj6006608-tokyo-talkies-original-imagbfyrhdraabse.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Women Ribbed Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 244,
+        "price": 699,
+        "discountPersent": 65,
         "size": [
             {
               "name": "S",
@@ -974,131 +610,103 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     },
     {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/6/y/v/m-sksh-dt1105-black-fubar-original-imag4cpwzmhbufg4-bb.jpeg?q=70",
-        "brand": "FUBAR",
-        "title": "Men Striped Cotton Blend Straight Kurta",
-        "color": "Black",
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/l3khsi80/dress/w/t/z/xl-ttj6007157-tokyo-talkies-original-imagenvazfrdygvu.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Women Maxi Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 666,
+        "price": 2149,
+        "discountPersent": 69,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/kuh9yfk0/dress/v/w/p/m-ut-2002-aask-original-imag7hzrbggpwxk7.jpeg?q=70",
+        "brand": "AASK",
+        "title": "Women Pleated Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 499,
+        "price": 2599,
+        "discountPersent": 80,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/3/9/c/m-552-sanwariya-creation-original-imagqsmykwmkg9yr.jpeg?q=70",
+        "brand": "SHRI RADHA RANI CREATIONS",
+        "title": "Women A-line Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 549,
+        "price": 2999,
+        "discountPersent": 81,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/y/u/c/m-mat-subh-laxmi-original-imagnh3ksegj6zhu.jpeg?q=70",
+        "brand": "SUBH LAXMI",
+        "title": "Women Fit and Flare Dark Green, Yellow Dress",
+        "color": "yellow",
         "discountedPrice": 399,
-        "price": 1648,
-        "discountPercent": 75,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/l3khsi80/kurta/1/c/6/l-mtml0042-328-manthan-original-imagenvzkm3v9vxh.jpeg?q=70",
-        "brand": "Manthan",
-        "title": "Men Printed Cotton Blend Ethnic Dress",
-        "color": "Orange",
-        "discountedPrice": 948,
-        "price": 1299,
-        "discountPercent": 27,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/s/w/c/xl-vlmk-combzip02-vida-loca-original-imagkc4hhm4fxhjb.jpeg?q=70",
-        "brand": "Vida Loca",
-        "title": "Pack of 2 Men Solid Pure Cotton Straight Kurta",
-        "color": "Multicolor",
-        "discountedPrice": 994,
-        "price": 2499,
-        "discountPercent": 60,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/t/j/u/s-pink-kurta-lilen-spoque-original-imagnfkwk5gpfmzx.jpeg?q=70",
-        "brand": "SPOQUE",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "Pink",
-        "discountedPrice": 362,
-        "price": 1499,
-        "discountPercent": 75,
-        "size": [
-            {
-              "name": "S",
-              "quantity": 20
-            },
-            {
-              "name": "M",
-              "quantity": 30
-            },
-            {
-              "name": "L",
-              "quantity": 50
-            }
-          ],
-          "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
-          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
-    },
-    {
-        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/kurta/x/f/6/xxl-new-white-nofilter-original-imaghzggudfezpr8.jpeg?q=70",
-        "brand": "Nofilter",
-        "title": "Men Solid Pure Cotton Straight Kurta",
-        "color": "White",
-        "discountedPrice": 393,
         "price": 1599,
-        "discountPercent": 75,
+        "discountPersent": 75,
         "size": [
             {
               "name": "S",
@@ -1114,9 +722,401 @@ export const mens_kurta=[
             }
           ],
           "quantity": 100,
-          "firstLevelCategory": "Men",
-          "secondLevelCategory": "Clothing",
-          "thirdLevelCategory": "mens_kurta",
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/d/k/4/l-vnds000269-vishudh-original-imaggef7kfhdmrsy.jpeg?q=70",
+        "brand": "Vishudh",
+        "title": "Women Ethnic Dress Maroon, Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 895,
+        "price": 2899,
+        "discountPersent": 69,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/k0y6cnk0/dress/g/h/w/m-ttj6004108-tokyo-talkies-original-imafkmhnsjhfawvj.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Women A-line Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 443,
+        "price": 1149,
+        "discountPersent": 61,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/l2nmnww0/dress/p/7/i/xl-g-westrn-finenx-original-imagdy3p67zxwpyj.jpeg?q=70",
+        "brand": "SHREEJI ENTERPRISE",
+        "title": "Women A-line Dark Blue, Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 389,
+        "price": 999,
+        "discountPersent": 61,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/z/c/s/s-ttj6005472-tokyo-talkies-original-imafxfpc5mka5gtf-bb.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Women A-line Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 464,
+        "price": 1549,
+        "discountPersent": 70,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/r/w/n/3xl-ww119-zoya-clothing-original-imafzqbxzxfdsk5z-bb.jpeg?q=70",
+        "brand": "Fashion2wear",
+        "title": "Women Maxi Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 449,
+        "price": 999,
+        "discountPersent": 55,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/o/y/l/l-na-ttj6008100-tokyo-talkies-original-imagz4rfctcugvgx.jpeg?q=70",
+        "brand": "Tokyo Talkies",
+        "title": "Women Skater Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 374,
+        "price": 1249,
+        "discountPersent": 70,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/v/a/v/xxl-drdrmsk-07-rudraaksha-original-imaftfczy2we9gq3-bb.jpeg?q=70",
+        "brand": "Rudraaksha",
+        "title": "Women Fit and Flare Yellow Dress With Mask",
+        "color": "yellow",
+        "discountedPrice": 366,
+        "price": 1999,
+        "discountPersent": 81,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/j/b/o/xs-md326-oomph-original-imag7fz4tx3n4mza-bb.jpeg?q=70",
+        "brand": "Oomph!",
+        "title": "Women Ruffled Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 479,
+        "price": 2330,
+        "discountPersent": 79,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/4/p/u/xl-120tkr2664-selvia-original-imafzagghj6fbfdj-bb.jpeg?q=70",
+        "brand": "Selvia",
+        "title": "Women High Low Yellow, White Dress",
+        "color": "yellow",
+        "discountedPrice": 459,
+        "price": 1997,
+        "discountPersent": 77,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/b/x/s/xl-sn-dr-74-slenor-original-imag7emersm9wkgs-bb.jpeg?q=70",
+        "brand": "SLENOR",
+        "title": "Women Pleated Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 854,
+        "price": 2499,
+        "discountPersent": 65,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/ksyz8280/dress/q/w/e/s-pltsk002mustard-pretty-loving-thing-original-imag6fyhghchymyd.jpeg?q=70",
+        "brand": "PRETTY LOVING THING",
+        "title": "Women Two Piece Dress Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 537,
+        "price": 1299,
+        "discountPersent": 58,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/krayqa80/kurta/w/2/n/l-kpmqr-10079-ishin-original-imag54bfp9zhbx3j.jpeg?q=70",
+        "brand": "Ishin",
+        "title": "Women Fit and Flare Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 1299,
+        "price": 5299,
+        "discountPersent": 76,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/r/m/a/-original-imagq647zh53qpa8.jpeg?q=70",
+        "brand": "SASSAFRAS",
+        "title": "Women Skater Yellow Dress",
+        "color": "yellow",
+        "discountedPrice": 794,
+        "price": 1799,
+        "discountPersent": 55,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
+          "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
+    },
+    {
+        "imageUrl": "https://rukminim1.flixcart.com/image/612/612/xif0q/dress/a/r/8/s-aa-00191-yellow-aayu-original-imagmncgchemsmc4.jpeg?q=70",
+        "brand": "AAYU",
+        "title": "Women Fit and Flare Yellow, White, Black Dress",
+        "color": "yellow",
+        "discountedPrice": 669,
+        "price": 1999,
+        "discountPersent": 66,
+        "size": [
+            {
+              "name": "S",
+              "quantity": 20
+            },
+            {
+              "name": "M",
+              "quantity": 30
+            },
+            {
+              "name": "L",
+              "quantity": 50
+            }
+          ],
+          "quantity": 100,
+          "topLavelCategory": "Women",
+          "secondLavelCategory": "Clothing",
+          "thirdLavelCategory": "women_dress",
           "description":"A traditional garment embodying elegance and grace. Crafted from fine fabrics, it features intricate embroidery and a relaxed fit, providing comfort and style."
     }
 ]
