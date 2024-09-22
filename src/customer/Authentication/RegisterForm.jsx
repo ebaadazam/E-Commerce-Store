@@ -1,31 +1,25 @@
-import { Button, Grid, TextField, Typography } from '@mui/material'
-import React, { useEffect } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
+import { Button, Grid, TextField, Typography, Snackbar, IconButton } from '@mui/material'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { getUser, register } from '../../State/Authentication/Action';
+import { register } from '../../State/Authentication/Action';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 
 const RegisterForm = () => {
 
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const jwt = localStorage.getItem("jwt")
 
-    // Access the jwt token from the store
-    const {auth} = useSelector(store=>store.auth)
+    const [openSnackbar, setOpenSnackbar] = useState(false);
 
-    // Commented it due to the sudden disapperance of register form
-    // Get user profile after token is stored locally
-    // useEffect(()=> {
-    //     if(jwt){
-    //         dispatch(getUser(jwt))
-    //     }
-        
-    // }, [jwt, auth.jwt] )
-
+    // Close Snackbar
+    const handleCloseSnackbar = () => {
+        setOpenSnackbar(false);
+    }
 
     const handleSubmit = (event) => {
-       event.preventDefault();
-       const data = new FormData(event.currentTarget);
+        event.preventDefault();
+        const data = new FormData(event.currentTarget);
         const userData = {
             firstName: data.get("firstName"),
             lastName: data.get("lastName"),
@@ -33,9 +27,12 @@ const RegisterForm = () => {
             password: data.get("password")
         };
 
-        dispatch(register(userData))
-        console.log("userData(register)", userData);
+        dispatch(register(userData));
 
+        // Show Snackbar on successful registration
+        setOpenSnackbar(true);
+
+        console.log("userData(register)", userData);
     }
 
     return (
@@ -117,8 +114,22 @@ const RegisterForm = () => {
                     </div>
                 </div>
             </form>
+
+            {/* Snackbar for success message with green tick */}
+            <Snackbar
+                open={openSnackbar}
+                autoHideDuration={6000}
+                onClose={handleCloseSnackbar}
+                anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+                message={
+                    <span style={{ display: 'flex', alignItems: 'center' }}>
+                        <CheckCircleIcon style={{ marginRight: '8px', color: 'green' }} />
+                        You are registered successfully!
+                    </span>
+                }
+            />
         </div>
     )
 }
 
-export default RegisterForm
+export default RegisterForm;

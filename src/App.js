@@ -2,6 +2,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import CustomerRouters from './Routers/CustomerRouters';
+import AdminRouters from './Routers/AdminRouters';
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <Routes>
         {/* Customer Route */}
         <Route path='/*' element={<CustomerRouters/>}></Route>
+
         {/* Admin Route */}
-        {/* nothing to show now for admin as we have not implemented the dashboard */}
+        <Route path='/admin/*' element={<AdminRouters/>}></Route>
       </Routes>
   
 
